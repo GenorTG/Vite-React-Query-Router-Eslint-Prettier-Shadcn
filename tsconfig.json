@@ -28,9 +28,10 @@
       "@/containers/*": ["./src/containers/*"],
       "@/lib/*": ["./src/lib/*"],
       "@/*": ["./src/*"]
-    }
+    },
+    "types": ["vitest/globals"]
   },
-  "include": ["src"],
+  "include": ["src", "./src/test/setup.ts"],
   "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

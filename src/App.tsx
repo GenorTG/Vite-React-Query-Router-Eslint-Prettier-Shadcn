@@ -1,20 +1,20 @@
-import { Route, Routes } from "react-router-dom";
-import Home from "./containers/Home";
+import { Outlet } from 'react-router-dom'
 
 const App = () => {
   return (
     <div className="h-full min-h-svh">
-      <div className="absolute h-svh w-full bg-black">
+      <div
+        className="absolute h-svh w-full bg-black"
+        data-testid="background-div"
+      >
         {/*static background*/}
       </div>
-      <div>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            {/* <Route path="" element={} /> */}
-          </Route>
-        </Routes>
+      <div className="relative">
+        <Outlet />
       </div>
+
+      <div className="relative text-2xl text-white">Vite</div>
     </div>
-  );
-};
-export default App;
+  )
+}
+export default App
