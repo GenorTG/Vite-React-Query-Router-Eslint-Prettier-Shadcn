@@ -1,0 +1,1 @@
+# Template for Vite React app with TanStack use Query, Router DOM, Eslint + Prettier + Tailwind configured, Shadcn initialized.
