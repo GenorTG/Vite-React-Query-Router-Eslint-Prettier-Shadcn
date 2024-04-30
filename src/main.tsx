@@ -6,9 +6,9 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 const queryClient = new QueryClient()
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import App from 'App'
-import ErrorPage from 'containers/Error-page'
-import Home from 'containers/Home'
+import App from '@/App'
+import ErrorPage from '@/containers/Error-page'
+import Home from '@/containers/Home'
 
 const router = createBrowserRouter([
   {
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: '/home',
+        path: '/',
         element: <Home />
       }
     ]
